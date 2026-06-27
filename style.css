@@ -1,57 +1,60 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html,body{
+
+html,
+body {
     height: 100%;
     width: 100%;
 }
 
-:root{
-    --bg-color:#000000;
-    --bg-button-color:#1a1a1a;
-    --primary-text-color:#f4f4f4;
-    --bg-task-color:#2a2a2a;
-    --delete-color:rgb(231, 87, 87);
+:root {
+    --bg-color: #000000;
+    --bg-button-color: #1a1a1a;
+    --primary-text-color: #f4f4f4;
+    --bg-task-color: #2a2a2a;
+    --delete-color: rgb(231, 87, 87);
 
-    --nav-padding:15px 30px;
-    --section-padding:15px 30px;
+    --nav-padding: 15px 30px;
+    --section-padding: 15px 30px;
 
-    --padding-s:5px;
-    --padding-m:10px;
-    --padding-l:15px;
-    --padding-xl:20px;
-    --padding-xxl:30px;
+    --padding-s: 5px;
+    --padding-m: 10px;
+    --padding-l: 15px;
+    --padding-xl: 20px;
+    --padding-xxl: 30px;
 
-    --border-radius-s:5px;
-    --border-radius-m:10px;
-    --border-radius-l:15px;
-    --border-radius-xl:20px;
-    --border-radius-xxl:30px;
+    --border-radius-s: 5px;
+    --border-radius-m: 10px;
+    --border-radius-l: 15px;
+    --border-radius-xl: 20px;
+    --border-radius-xxl: 30px;
 
 }
 
-body{
-   background-color:var(--bg-color);
-   color: var(--primary-text-color); 
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-text-color);
 }
 
-main{
+main {
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 
-nav{
-padding: var(--nav-padding);
-display: flex;
-align-items: center;
-justify-content: space-between;
+nav {
+    padding: var(--nav-padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-nav button{
+
+nav button {
     background-color: var(--bg-button-color);
-    border:none;
+    border: none;
     outline: none;
     color: var(--primary-text-color);
     padding: var(--padding-m) var(--padding-l);
@@ -60,17 +63,18 @@ nav button{
 
 }
 
-section{
+section {
     padding: var(--section-padding);
     display: flex;
     justify-content: space-between;
-    
+
     flex-grow: 1;
     gap: var(--padding-xxl);
 }
-section .task-column{
+
+section .task-column {
     background-color: var(--bg-button-color);
-    flex-grow:1 ;
+    flex-grow: 1;
     padding: var(--padding-m);
     display: flex;
     flex-direction: column;
@@ -79,12 +83,12 @@ section .task-column{
     transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-section .task-column.hover-over{
+section .task-column.hover-over {
     border: 2px dashed var(--primary-text-color);
     scale: 1.06;
 }
 
-section .task-column .heading{
+section .task-column .heading {
     width: 100%;
     display: flex;
     align-items: center;
@@ -93,7 +97,7 @@ section .task-column .heading{
 }
 
 
-section .task-column  .task{
+section .task-column .task {
     background-color: var(--bg-task-color);
     padding: var(--padding-m);
     border-radius: var(--border-radius-m);
@@ -103,7 +107,7 @@ section .task-column  .task{
     cursor: grab;
 }
 
-section .task-column  .task button{
+section .task-column .task button {
     align-self: flex-end;
     border-radius: var(--padding-s);
     cursor: pointer;
