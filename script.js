@@ -38,3 +38,5 @@ function addDragEventOnColumn(column) {
 addDragEventOnColumn(todo)
 addDragEventOnColumn(progress)
 addDragEventOnColumn(done)
+
+
